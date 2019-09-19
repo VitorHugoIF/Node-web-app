@@ -7,7 +7,7 @@
 /*------------class-----------*/
 
 .div-nav{
-    background: url(../../images/background.png) no-repeat center center;
+    background: url(../../images/background.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,15 +22,46 @@
     align-items: center;
     justify-content: center;
 }
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-right: 150px;
+}
+.phrase{ 
+    display: flex;
+    align-items: center;
+
+    height: 91px;
+    width: 912px;
+    max-width: 912px;
+    padding: 20px;
+    color: #FFF;
+
+    font-family: brandon-grotesque,Arial,sans-serif;
+    text-align: right;
+    font-size: 3rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.row-pharse{
+    position: relative;
+    top:40%;
+    left: 40%;
+    background-color: rgba(0, 0, 0, .8);
+}
 
 
 /* --------bootstrap--------- */
 .bg-light{
     background-color:transparent!important;
-    padding: 30px;
+    padding: 80px 0px 0px 50px;
 }
 .nav-link{
-    color: black;
+    color: #FFF!important;
     font-weight: bold;
-    text-shadow: 2px 2px 5px gray!important;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, .6)!important;
 }
+
