@@ -69,6 +69,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 560px;
 }
 
 .section-img{
@@ -109,6 +110,7 @@
 .content-boxes{
     height: 100%;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .box-text .content-box{
