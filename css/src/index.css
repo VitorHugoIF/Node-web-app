@@ -3,6 +3,28 @@
     margin: 0;
     padding: 0; 
 }
+/* --------bootstrap--------- */
+.bg-light{
+    background-color:transparent!important;
+    padding: 80px 0px 0px 50px;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url('../../images/menu.png');
+}
+.row{
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color:rgba(8, 197, 245, 0.9);
+}
+
 
 /*------------class-----------*/
 
@@ -80,15 +102,6 @@
     color: #FFF;
 }
 
-#section-img-1{
-    background: url(../../images/section.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-#section-img-2{
-    background: url(../../images/rodape.jpg) no-repeat center center;
-    background-size: cover;
-}
 
 .text-content{
     margin: auto;
@@ -131,45 +144,38 @@
 .font-20{
     font-size: 24px;
 }
+
+/* -----------id's-------------- */
+#section-img-1{
+    background: url(../../images/section.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#section-img-2{
+    background: url(../../images/rodape.jpg) no-repeat center center;
+    background-size: cover;
+}
 #img-box-1{
     background: url(../../images/img-box1.jpg);
-    background-size:cover;
+    background-size:100% 100%;
 }
 #img-box-2{
     background: url(../../images/img-box2.jpg);
-    background-size:cover;
+    background-size:100% 100%;
 }
 #img-box-3{
     background: url(../../images/img-box3.jpg);
-    background-size:cover;
+    background-size:100% 100%;
 }
 #img-box-4{
     background: url(../../images/img-box4.jpg);
-    background-size:cover;
+    background-size:100% 100%;
 }
 #main{
     padding-left: 0px;
     padding-right: 0px;
 }
 
-/* --------bootstrap--------- */
-.bg-light{
-    background-color:transparent!important;
-    padding: 80px 0px 0px 50px;
-}
-.nav-link{
-    color: #FFF!important;
-    font-weight: bold;
-}
-.navbar-light .navbar-toggler-icon{
-    background-image: url('../../images/menu.png');
-}
-.row{
-    padding-left: 0!important;
-    padding-right: 0!important;
-    margin-left: 0!important;
-    margin-right: 0!important;
-}
 
 /* -----media query--------- */
 @media only screen and (max-width : 500px) {
