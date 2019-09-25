@@ -147,8 +147,21 @@
 .footer{
     color: #ddd;
     background-color: #101010;
-    height: 200px;
+    min-height: 200px;
     text-align: center;
+    padding: 10px;
+}
+.siteMap{
+    text-align: left;
+}
+.link{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.sublink{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
 }
 
 /* -----------id's-------------- */
