@@ -165,7 +165,19 @@
     padding-bottom: 0px;
     padding-left: 30px;
 }
-
+.text-history{
+    padding: 20px;
+}
+.text-history h3{
+    color: #000f58;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.text-history p{
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
 /* -----------id's-------------- */
 #section-img-1{
     background: url(../../images/section.jpg) no-repeat center center;
@@ -196,7 +208,9 @@
     padding-left: 0px;
     padding-right: 0px;
 }
-
+#image-mtv{
+    padding: 15px;
+}
 
 /* -----media query--------- */
 @media only screen and (max-width : 500px) {

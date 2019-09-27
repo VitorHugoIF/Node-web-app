@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     res.render('pages/home');
 });
 
+app.get('/history', (req, res) => {
+    res.render('pages/history');
+});
+
 
 app.listen(port, () => {
     console.log(`Run in  http://localhost:${port}`);
