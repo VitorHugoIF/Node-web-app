@@ -9,7 +9,7 @@
         content="Computação na arte. Essa fusão se faz valer positivamente em vários meios, em especial na educação. Os diálogos estabelecidos pela arte e a tecnologia faz nascer novas tendências de interatividade humana, de abordagem e afeto de si com o outro e, junto com elas, as chamadas tecnologias educacionais: de ensino e de aprendizagem. Novas formas de educar.">
     <meta name="keywords"
         content="Computação, Arte, Tecnologia, Educação, Ensino, Aprendizagem, Interatividade, Tendência">
-    <meta name="Author" content="Vitor Hugo">
+    <meta name="Author" content="Vitor Hugo, Carlos Eduardo, Weslei Rocha">
 
     <link rel="stylesheet" href="/css/lib/bootstrap.css">
     <link rel="stylesheet" href="/css/src/index.css">
@@ -19,70 +19,61 @@
 
 <body>
 
-    <div class="container-fluid" id="main">
-        <div class="div-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="../../images/logo.svg" class="img-fluid d-inline-block align-center">
+            <span class="text-logo">DedéMusic</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="row col-md-12" style="justify-content: flex-end;">
-                    <div class="collapse navbar-collapse col-md-6" id="navbar">
-                        <ul class="navbar-nav">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Home |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/history">História |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/computation">Computação |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/art">Arte |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contato |</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="col-md-6 div-logo">
-                        <span class="text-logo">DedéMusic</span>
-                        <div class="logo"></div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-center <%= active1 %>" href="/">Home </a>
+                </li>
+                <div class="dropdown">
+                    <a href="/history" class="dropbtn nav-link">História</a>
+                    <div class="dropdown-content">
+                        <a href="#title1">A evolução da indústria fonográfica</a>
+                        <a href="#title2">O fim dos álbuns</a>
+                        <a href="#title3">O fim da MTV</a>
                     </div>
                 </div>
-            </nav>
-            <div class=" col-md-12 row-phrase">
-                <div class="phrase">
-                    A TECNOLOGIA E A MUSICA
-                </div>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link text-center <%= active3 %>" href="Musics">Paradas de sucesso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center <%= active4 %>" href="Computation">Computação e tecnologia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center <%= active4 %>" href="About">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center <%= active4 %>" href="Contact">Contato</a>
+                </li>
+            </ul>
         </div>
-
-        <div id="wrapper">
-
-            <%- body %>
-
-        </div>
-
-
+    </nav>
+    <div class="container wrapper">
+        <%- body %>
     </div>
-    <footer class="container-fluid footer">
-       <div style="text-decoration: underline; width: 100%;">MAPA DO SITE</div>
-       <div class="col-md-3 siteMap">
-           <a class="nav-link link" href="/" >HOME</a>
-           <a class="nav-link sublink" href="#experimentação-artistica">. Experimentação artística</a>
-           <a class="nav-link sublink" href="#texto">. Texto introdutório</a>
-           <a class="nav-link sublink" href="#mudanca-na-industria-musical">. Mudança na indústria musical</a>
-           <a class="nav-link sublink" href="#rodape">. Texto de rodapé</a>
-        </div>
+    <footer class="footer">
+        © 2019 DedéMusic. Todos os direitos reservados.
     </footer>
+    <div class="row col-md-12 site-map">
+        <div class="col-md-12 center">
+            <p>MAPA DO SITE</p>
+        </div>
 
+        <p><a href="/">. Home</a></p>
+        <p><a href="/history">. História</a></p>
+        <p class="sub-item"><a href="/history#title1">A evolução da indústria fonográfica</a></p>
+        <p class="sub-item"><a href="/history#title2">O fim dos álbuns</a></p>
+        <p class="sub-item"><a href="/history#title3">O fim da MTV</a></p>
+    </div>
 
     <script src="/js/lib/jquery.js"></script>
     <script src="/js/lib/popper.js"></script>
