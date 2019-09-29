@@ -147,3 +147,8 @@
         font-size: 25px;
     }
 }
+
+.form-control{
+
+    width: 80% !important;
+}  
