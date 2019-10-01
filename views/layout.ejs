@@ -6,15 +6,15 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description"
-        content="Computação na arte. Essa fusão se faz valer positivamente em vários meios, em especial na educação. Os diálogos estabelecidos pela arte e a tecnologia faz nascer novas tendências de interatividade humana, de abordagem e afeto de si com o outro e, junto com elas, as chamadas tecnologias educacionais: de ensino e de aprendizagem. Novas formas de educar.">
+        content="<%= desc %>">
     <meta name="keywords"
-        content="Computação, Arte, Tecnologia, Educação, Ensino, Aprendizagem, Interatividade, Tendência">
+        content="<%= key %>">
     <meta name="Author" content="Vitor Hugo, Carlos Eduardo, Weslei Rocha">
 
     <link rel="stylesheet" href="/css/lib/bootstrap.css">
     <link rel="stylesheet" href="/css/src/index.css">
 
-    <title>Computação na arte</title>
+    <title><%= title %></title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                     <a class="nav-link text-center <%= active1 %>" href="/">Home </a>
                 </li>
                 <div class="dropdown">
-                    <a href="/history" class="dropbtn nav-link">História</a>
+                    <a href="/history" class="dropbtn nav-link <%= active2 %>">História</a>
                     <div class="dropdown-content">
                         <a href="/history#title1">A evolução da indústria fonográfica</a>
                         <a href="/history#title2">O fim dos álbuns</a>
@@ -43,16 +43,16 @@
                     </div>
                 </div>
                 <li class="nav-item">
-                    <a class="nav-link text-center <%= active3 %>" href="Musics">Paradas de sucesso</a>
+                    <a class="nav-link text-center <%= active3 %>" href="/musics">Paradas de sucesso</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-center <%= active4 %>" href="computation">Computação e tecnologia</a>
+                    <a class="nav-link text-center <%= active4 %>" href="/computation">Computação e tecnologia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-center <%= active5 %>" href="about">Sobre</a>
+                    <a class="nav-link text-center <%= active5 %>" href="/about">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-center <%= active6 %>" href="contact">Contato</a>
+                    <a class="nav-link text-center <%= active6 %>" href="/contact">Contato</a>
                 </li>
             </ul>
         </div>
@@ -68,11 +68,21 @@
             <p>MAPA DO SITE</p>
         </div>
 
-        <p><a href="/">. Home</a></p>
-        <p><a href="/history">. História</a></p>
-        <p class="sub-item"><a href="/history#title1">A evolução da indústria fonográfica</a></p>
-        <p class="sub-item"><a href="/history#title2">O fim dos álbuns</a></p>
-        <p class="sub-item"><a href="/history#title3">O fim da MTV</a></p>
+        <div class="row">
+            <div class="col-md">
+                <p><a href="/">. Home</a></p>
+                <p><a href="/history">. História</a></p>
+                <p class="sub-item"><a href="/history#title1">A evolução da indústria fonográfica</a></p>
+                <p class="sub-item"><a href="/history#title2">O fim dos álbuns</a></p>
+                <p class="sub-item"><a href="/history#title3">O fim da MTV</a></p>
+            </div>
+            <div class="col-md">
+                <p><a href="/musics">. Paradas de sucesso</a></p>
+                <p><a href="/computation">. Computação e tecnologia</a></p>
+                <p><a href="/about">. Sobre</a></p>
+                <p><a href="/contact">. Contato</a></p>
+            </div>
+        </div>
     </div>
 
     <script src="/js/lib/jquery.js"></script>

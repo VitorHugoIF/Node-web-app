@@ -1,20 +1,72 @@
 <%- contentFor('body') %>
+<h1 class="main-title">Paradas de <span class="underline">sucesso</span></h1>
+<hr>
 <div class="row col-md-12">
     <div class="text-content">
         <p>
-            Considera-se aqui não só as tecnologias do digital, mas todo e qualquer artífice inventado para criar
-            e ordenar sons, gerar música, enfim. Novas estéticas sonoras, inclusive, foram sempre permeadas pela
-            descoberta de novos recursos. Esses recursos sofrem transformações e transformam as artes – e a técnica
-            também – ou o modo de fazer – que alteram a linguagem, o discurso estético, o conteúdo, a ordenação dos
-            símbolos e signos. Hoje, a música, e não só a música eletrônica, é produzida, circulada e/ou consumida
-            perpassando por recursos de tecnologias.
-            É impossível pensar atualmente a tríade produção/circulação/consumo sem o entremeio das tecnologias, sejam
-            elas digitais ou mesmo analógicas.
-
-            A música está hoje associada não só ao uso de softwares e tecnologias de todo porte em processos de
-            produção,
-            mas à própria utilização de redes telemáticas como espaço de produção simbólica coletiva, através das
-            tecnologias P2P, além do uso dessas redes como instrumento de circulação da produção.
+            Para relembrar o que as pessoas mais escutavam no passado, o Spotify - serviço de música digital via
+            streaming – fez uma relação das músicas mais ouvidas nos últimos anos – de 1950 até 2000. Com mais de 5.5
+            milhões de playlists sobre décadas criadas pelos usuários ao redor do mundo, os anos 80 reinam absolutos
+            como a mais relembrada pelos fãs. Don’t Stop Believin, hit de 1981 da banda Journey provou que é um clássico
+            atemporal sendo a faixa mais ouvida entre todas as playlists que abordam décadas, tanto no Brasil quanto no
+            mundo todo.
+            Os hábitos dos brasileiros se assemelham muito ao do resto dos habitantes do Globo. Nas décadas de 50, 60,
+            80 e 90 as mais ouvidas foram as mesmas: Lollipop (1958) dos Chordettes , It’s Your Thing (1969) dos The
+            Isley Brothers, Don’t Stop Believin (1981) do Journey e Wannabe (1996), das Spice Girls respectivamente. Nos
+            anos 70 e 00 os brasileiros preferiram September (1978) do Earth/Wind & Fire e It Wasn’t Me (2000) do cantor
+            Shaggy, contra Evil Woman (1975) do Electric Light Orchestra e Yeah! (2002) do Usher no resto do mundo.
         </p>
+        <h5>
+            Confira abaixo as músicas mais ouvidas de cada década no Brasil:
+        </h5>
     </div>
+
+    <form class="col-md-12 form-inline form-musics">
+        <div class="form-group">
+            <input type="text" class="form-control year" placeholder="Ano" name="year">
+        </div>
+        <div class="form-group" style="width: calc(100% - 80px);">
+            <div class="input-group" style="width:100%;">
+                <input type="text" class="form-control" placeholder="Nome" name="name">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary" style="z-index: 0;">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <table class="table table-sm">
+        <caption>Músicas mais ouvidas de cada década</caption>
+        <thead class="thead-light">
+            <tr>
+                <th style="width: 80px;">Ano</th>
+                <th>Música</th>
+            </tr>
+        </thead>
+        <tbody id="body-table-musics">
+            <% for(let i=0; i<musics.length; i++) {%>
+                <% if(musics[i].fUrl) { %>
+                    <tr>
+                        <td><a href="<%= musics[i].fUrl %>" target="_blank"><%= musics[i].fYear %></a></td>
+                        <td><a href="<%= musics[i].fUrl %>" target="_blank"><%= musics[i].fName %></a></td>
+                    </tr>
+                <%} else{%>
+                    <tr>
+                        <td><%= musics[i].fYear %></td>
+                        <td><%= musics[i].fName %></td>
+                    </tr>
+                <%}%>
+            <%}%>
+        </tbody>
+    </table> 
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+                <a class="page-link" href="0" tabindex="-1" aria-disabled="true" id="prev">Anterior</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="2" id="next">Próxima</a>
+            </li>
+        </ul>
+    </nav>
 </div>

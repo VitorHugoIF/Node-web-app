@@ -1,5 +1,13 @@
 
 /* ---------bootstrap--------- */
+.table .thead-light th{
+    background-color: #F8F8FA;
+    color: #adb5bd;
+    border: solid 1px #E9EAEE;
+}
+.table td{
+    border: solid 1px #E9EAEE;
+}
 .bg-light{
     z-index: 1;
     position: sticky;
@@ -17,14 +25,17 @@
     color:#EDCD6C!important;
 }
 .nav-link:hover{
-    font-size: 1.1rem;
-    font-weight: 650;
+    color: #FFF!important;
 }
 .row{
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
 }
+.form-control{
+
+    width: 80% !important;
+} 
 /* -----------ids------------ */
 #navbar{
     padding-right: 30px;
@@ -35,7 +46,7 @@
     align-items: center;
     justify-content: center;
 }
-.site-map p, a{
+.site-map p, .site-map a{
     color: #FFF;
     margin: 0!important;
 }
@@ -57,10 +68,8 @@
 .image-padding{
     padding:15px; 
 }
-.active{
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: underline;
+a.nav-link.text-center.active, a.dropbtn.nav-link.active{
+    color: #FFF!important;
 }
 .footer{
     padding: 10px;
@@ -100,6 +109,20 @@
     color: #777;
 }
 
+.form-musics{
+    padding: 10px 0 10px 0;
+}
+.form-musics .year{
+    width: 80px!important;
+}
+.form-musics .name{
+    width: 100%!important;
+}
+
+td a{
+    display: block;
+    width: 100%;
+}
 
 /* --------dropdown---------- */
 
@@ -147,8 +170,4 @@
         font-size: 25px;
     }
 }
-
-.form-control{
-
-    width: 80% !important;
-}  
+ 
