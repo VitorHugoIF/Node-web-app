@@ -1,0 +1,9 @@
+1) Baixar o arquivo zip do trabalho.
+2) Executar dentro da pasta raiz do projeto o comando "mpm i" para instalar as dependencias do sistema na pasta node_modules.
+3) Rodar o XAMPP/WAMPP criar uma database "dbmusics" e importar o arquivo sql que se encontra na raiz do projeto.
+4) Executa o servidor node com o comando node "index.js".
+
+TECNOLOGIAS USADAS:
+	-Node js - backend.
+	-EJS engine - para renderizar paginas.
+	-HTML, CSS, JS, BOOTSTRAP, JQUERY

@@ -127,7 +127,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/insert', (req, res) => {
-    res.render('pages/insert', { active1: '', active2: '', active3: '', active4: '', active5: '', active6: '' });
+    res.render('pages/insert', { title:'', desc:'', key:'', active1: '', active2: '', active3: '', active4: '', active5: '', active6: '' });
 });
 app.post('/insert', (req, res) => {
     let musics = req.body.musics.split(';');
